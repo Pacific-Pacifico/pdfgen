@@ -1,6 +1,7 @@
 # pdfgenerator
 
-install wkhtmltopdf on linux:-
+install wkhtmltopdf on linux:-  
 
-chmod +x wkhtmltopdf_installer.sh
+chmod +x wkhtmltopdf_installer.sh  
+
 sudo ./wkhtmltopdf_installer.sh
