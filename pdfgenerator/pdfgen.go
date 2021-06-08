@@ -32,9 +32,8 @@ type InvoiceData struct {
 }
 
 type CertificateData struct {
-	CssFile  string
-	JsFile   string
-	FontFile string
+	CssFile string
+	JsFile  string
 
 	Username string
 	Course   string
@@ -120,15 +119,12 @@ func GenerateCertificate() {
 	js, _ := filepath.Abs("pdfgenerator/template/bootstrap.min.js")
 	img, _ := filepath.Abs("pdfgenerator/template/apni_shiksha_logo.jpg")
 	sign, _ := filepath.Abs("pdfgenerator/template/sign.jpg")
-	ff, _ := filepath.Abs("pdfgenerator/template/font_file.ttf")
 	fmt.Println(cs)
 	fmt.Println(js)
 	fmt.Println(img)
-	fmt.Println(ff)
 
 	CData.CssFile = cs
 	CData.JsFile = js
-	CData.FontFile = ff
 
 	CData.Image = img
 	CData.Sign = sign
